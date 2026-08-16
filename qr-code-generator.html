@@ -164,6 +164,16 @@
         <label for="channel">channel</label>
         <input id="channel" type="text" value="cs-console:presence" spellcheck="false">
       </div>
+
+      <div class="field">
+        <label for="group">group</label>
+        <input id="group" type="text" value="2-19" spellcheck="false">
+      </div>
+
+      <div class="field">
+        <label for="class">class</label>
+        <input id="class" type="text" value="" spellcheck="false">
+      </div>
     </section>
 
     <div class="qr-wrap" aria-live="polite">
@@ -179,7 +189,9 @@
     const fields = {
       baseUrl: document.getElementById("base-url"),
       app: document.getElementById("app"),
-      channel: document.getElementById("channel")
+      channel: document.getElementById("channel"),
+      group: document.getElementById("group"),
+      className: document.getElementById("class")
     };
 
     const qrTarget = document.getElementById("qrcode");
@@ -194,6 +206,8 @@
       const params = new URLSearchParams();
       addParam(params, "app", fields.app.value);
       addParam(params, "channel", fields.channel.value);
+      addParam(params, "group", fields.group.value);
+      addParam(params, "class", fields.className.value);
       url.search = params.toString();
 
       return url.toString();
