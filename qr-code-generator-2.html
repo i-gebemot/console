@@ -156,13 +156,23 @@
 
     <section class="grid">
       <div class="field">
-        <label for="app">app</label>
-        <input id="app" type="text" value="console" spellcheck="false">
+        <label for="school">school</label>
+        <input id="school" type="text" value="Gebemot" spellcheck="false">
       </div>
 
       <div class="field">
-        <label for="channel">channel</label>
-        <input id="channel" type="text" value="cs-console:presence" spellcheck="false">
+        <label for="teacher">teacher</label>
+        <input id="teacher" type="text" value="Gosha" spellcheck="false">
+      </div>
+
+      <div class="field">
+        <label for="class">class</label>
+        <input id="class" type="text" value="1-18" spellcheck="false">
+      </div>
+
+      <div class="field">
+        <label for="lesson">lesson</label>
+        <input id="lesson" type="text" value="Python-12" spellcheck="false">
       </div>
     </section>
 
@@ -178,8 +188,10 @@
   <script>
     const fields = {
       baseUrl: document.getElementById("base-url"),
-      app: document.getElementById("app"),
-      channel: document.getElementById("channel")
+      school: document.getElementById("school"),
+      teacher: document.getElementById("teacher"),
+      className: document.getElementById("class"),
+      lesson: document.getElementById("lesson")
     };
 
     const qrTarget = document.getElementById("qrcode");
@@ -192,18 +204,13 @@
 
       url.search = "";
       const params = new URLSearchParams();
-      addParam(params, "app", fields.app.value);
-      addParam(params, "channel", fields.channel.value);
+      params.set("school", fields.school.value);
+      params.set("teacher", fields.teacher.value);
+      params.set("class", fields.className.value);
+      params.set("lesson", fields.lesson.value);
       url.search = params.toString();
 
       return url.toString();
-    }
-
-    function addParam(params, name, value) {
-      const trimmedValue = value.trim();
-      if (trimmedValue !== "") {
-        params.set(name, trimmedValue);
-      }
     }
 
     function update() {
