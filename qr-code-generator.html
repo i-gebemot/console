@@ -161,8 +161,8 @@
       </div>
 
       <div class="field">
-        <label for="channel">channel</label>
-        <input id="channel" type="text" value="cs-console:presence" spellcheck="false">
+        <label for="room">room</label>
+        <input id="room" type="text" value="cs:112233" spellcheck="false">
       </div>
 
       <div class="field">
@@ -189,7 +189,7 @@
     const fields = {
       baseUrl: document.getElementById("base-url"),
       app: document.getElementById("app"),
-      channel: document.getElementById("channel"),
+      room: document.getElementById("room"),
       group: document.getElementById("group"),
       className: document.getElementById("class")
     };
@@ -205,7 +205,7 @@
       url.search = "";
       const params = new URLSearchParams();
       addParam(params, "app", fields.app.value);
-      addParam(params, "channel", fields.channel.value);
+      addParam(params, "room", fields.room.value);
       addParam(params, "group", fields.group.value);
       addParam(params, "class", fields.className.value);
       url.search = params.toString();
