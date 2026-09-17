@@ -1,0 +1,89 @@
+property-templates:
+  - &text-sm-green
+    font: Excalidraw
+    size: 10
+    clazz: bg-green-400
+
+  - &text-sm-red
+    font: Excalidraw
+    size: 10
+    clazz: bg-green-400
+
+  - &text-sm-pink
+    font: Excalidraw
+    size: 10
+    clazz: bg-green-400
+
+  - &text-sm-blue
+    font: Excalidraw
+    size: 10
+    clazz: bg-green-400
+
+  - &text-sm-num
+    font: Excalidraw
+    size: 10
+    clazz: bg-green-400
+
+lesson-templates:
+  - &gifted-vav-00
+    courseId: gifted-vav-5787-01
+    courseName:
+      <<: *text-sm-green
+      value: החנה למבחן למחוננים
+    topic: 
+      <<: *text-sm-red
+      value: היכרות
+    students:
+      <<: *text-sm-num
+      value: 0
+
+  - &prog-kids-00
+    courseId: gifted-vav-5787-01
+    courseName: 
+      <<: *text-sm-pink
+      value: מדמ"ח לצעירים
+    topic:
+      <<: *text-sm-blue
+      value: היכרות
+    students:
+      <<: *text-sm-num
+      value: 0
+
+lessons:
+  week-43:
+    - <<: *gifted-vav-00
+      date: 
+        <<: *text-sm-blue
+        value: 19/9/26
+      time: 
+        <<: *text-sm-red
+        value: 12:00
+      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+
+    - <<: *gifted-vav-00
+      date: 
+        <<: *text-sm-blue
+        value: 20/9/26
+      time:
+        <<: *text-sm-red
+        value: 14:00
+      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+
+  week-44:
+    - <<: *prog-kids-00
+      date: 
+        <<: *text-sm-blue
+        value: 19/9/26
+      time: 
+        <<: *text-sm-red
+        value: 14:00
+      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+
+    - <<: *prog-kids-00
+      date: 
+        <<: *text-sm-blue
+        value: 20/9/26
+      time: 
+        <<: *text-sm-red
+        value: 12:00
+      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
