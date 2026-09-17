@@ -39,7 +39,7 @@ lesson-templates:
     courseId: gifted-vav-5787-01
     courseName:
       <<: *attr-course
-      value: החנה למבחן מחוננים
+      value: הכנה למבחן מחוננים
     tags:
       <<: *attr
       values: ["כיתה ו"]
