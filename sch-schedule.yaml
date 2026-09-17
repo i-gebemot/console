@@ -1,89 +1,123 @@
 property-templates:
-  - &text-sm-green
+  - &attr
     font: Excalidraw
-    size: 10
-    clazz: bg-green-400
+    daisy: 'bg-gray-300'
 
-  - &text-sm-red
-    font: Excalidraw
-    size: 10
-    clazz: bg-green-400
+  - &attr-course
+    <<: *attr
+    daisy: 'bg-cyan-200'
 
-  - &text-sm-pink
-    font: Excalidraw
-    size: 10
-    clazz: bg-green-400
+  - &attr-topic
+    <<: *attr
+    daisy: 'bg-lime-200'
 
-  - &text-sm-blue
-    font: Excalidraw
-    size: 10
-    clazz: bg-green-400
+  - &attr-date
+    <<: *attr
+    daisy: 'bg-orange-400'
 
-  - &text-sm-num
-    font: Excalidraw
-    size: 10
-    clazz: bg-green-400
+  - &attr-time
+    <<: *attr
+    daisy: 'bg-yellow-400'
+
+  - &attr-ages
+    <<: *attr
+    daisy: 'bg-gray-300'
+
 
 lesson-templates:
-  - &gifted-vav-00
+  - &gifted-vav-1
     courseId: gifted-vav-5787-01
     courseName:
-      <<: *text-sm-green
-      value: החנה למבחן למחוננים
+      <<: *attr-course
+      value: החנה למבחן מחוננים
+    tags:
+      <<: *attr
+      values: ["כיתה ו"]
     topic: 
-      <<: *text-sm-red
+      <<: *attr-topic
       value: היכרות
     students:
-      <<: *text-sm-num
+      <<: *attr
       value: 0
+    daisy: ''
+    whatsapp: ''
+    iAmIn: false
 
-  - &prog-kids-00
-    courseId: gifted-vav-5787-01
+  - &prog-kids-1
+    courseId: prog-kids-5787-01
     courseName: 
-      <<: *text-sm-pink
+      <<: *attr-course
       value: מדמ"ח לצעירים
+    tags:
+      <<: *attr-ages
+      values: ["גילאים 10-11"]
     topic:
-      <<: *text-sm-blue
+      <<: *attr-topic
       value: היכרות
     students:
-      <<: *text-sm-num
+      <<: *attr
       value: 0
+    daisy: ''
+    whatsapp: ''
+    iAmIn: false
+
+  - &prog-78-1
+    courseId: prog-78-5787-01
+    courseName: 
+      <<: *attr-course
+      value: מדמ"ח לצעירים
+    tags:
+      <<: *attr-ages
+      values: ["כיתות ז-ח"]
+    topic:
+      <<: *attr-topic
+      value: היכרות
+    students:
+      <<: *attr
+      value: 0
+    daisy: ''
+    whatsapp: ''
+    iAmIn: false
 
 lessons:
-  week-43:
-    - <<: *gifted-vav-00
+  sep.3:
+    - <<: *gifted-vav-1
       date: 
-        <<: *text-sm-blue
-        value: 19/9/26
+        <<: *attr-date
+        value: 19/9
       time: 
-        <<: *text-sm-red
+        <<: *attr-time
         value: 12:00
+      daisy: bg-red-100
       whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
 
-    - <<: *gifted-vav-00
+    - <<: *gifted-vav-1
       date: 
-        <<: *text-sm-blue
-        value: 20/9/26
+        <<: *attr-date
+        value: 20/9
       time:
-        <<: *text-sm-red
+        <<: *attr-time
         value: 14:00
+      daisy: bg-green-100
       whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
 
-  week-44:
-    - <<: *prog-kids-00
+  sep.4:
+    - <<: *prog-kids-1
       date: 
-        <<: *text-sm-blue
-        value: 19/9/26
+        <<: *attr-date
+        value: 19/9
       time: 
-        <<: *text-sm-red
+        <<: *attr-time
         value: 14:00
+      daisy: bg-purple-100
       whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
 
-    - <<: *prog-kids-00
+    - <<: *prog-kids-1
       date: 
-        <<: *text-sm-blue
-        value: 20/9/26
+        <<: *attr-date
+        value: 20/9
       time: 
-        <<: *text-sm-red
+        <<: *attr-time
         value: 12:00
+      daisy: bg-yellow-100
       whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
