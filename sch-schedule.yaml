@@ -65,7 +65,7 @@ lesson-templates:
     courseId: prog-78-5787-01
     courseName: 
       <<: *attr-course
-      value: מדמ"ח לצעירים
+      value: מדמ"ח שלוש שנים לפני בגרות
     tags:
       <<: *attr-ages
       values: ["כיתות ז-ח"]
@@ -74,44 +74,65 @@ lesson-templates:
       value: היכרות
 
 lessons:
-  sep.3:
+  gifted-vav:
     - <<: *gifted-vav-1
+      daisy: bg-red-100
       date: 
         <<: *attr-date
-        value: 19/9
+        value: 22/9
       time: 
         <<: *attr-time
-        value: 12:00
-      daisy: bg-red-100
-      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+        value: 13:00
+      whatsapp: https://chat.whatsapp.com/DOFt0rDop8JKs3iLlQvOKx
 
     - <<: *gifted-vav-1
+      daisy: bg-green-100
       date: 
         <<: *attr-date
-        value: 20/9
+        value: 23/9
       time:
         <<: *attr-time
-        value: 14:00
-      daisy: bg-green-100
-      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+        value: 15:00
+      whatsapp: https://chat.whatsapp.com/DOFt0rDop8JKs3iLlQvOKx
 
-  sep.4:
+  prog-kids:
     - <<: *prog-kids-1
-      date: 
-        <<: *attr-date
-        value: 19/9
-      time: 
-        <<: *attr-time
-        value: 14:00
       daisy: bg-purple-100
-      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
-
-    - <<: *prog-kids-1
       date: 
         <<: *attr-date
-        value: 20/9
+        value: 22/9
       time: 
         <<: *attr-time
-        value: 12:00
+        value: 15:00
+      whatsapp: https://chat.whatsapp.com/GPHbwrXoTpd5eWUXGkGHqZ
+
+    - <<: *prog-kids-1
       daisy: bg-yellow-100
-      whatsapp: https://chat.whatsapp.com/KwHLuhF1mPBLatvcZQ8Umj
+      date: 
+        <<: *attr-date
+        value: 24/9
+      time: 
+        <<: *attr-time
+        value: 13:00
+      whatsapp: https://chat.whatsapp.com/GPHbwrXoTpd5eWUXGkGHqZ
+
+  prog-78:
+    - <<: *prog-78-1
+      daisy: bg-green-100
+      date: 
+        <<: *attr-date
+        value: 23/9
+      time: 
+        <<: *attr-time
+        value: 13:00
+      whatsapp: https://chat.whatsapp.com/IqYbf8qEOU71I9uT0yWKfM
+
+    - <<: *prog-78-1
+      daisy: bg-blue-100
+      date: 
+        <<: *attr-date
+        value: 24/9
+      time: 
+        <<: *attr-time
+        value: 15:00
+      whatsapp: https://chat.whatsapp.com/IqYbf8qEOU71I9uT0yWKfM
