@@ -73,6 +73,32 @@ lesson-templates:
       <<: *attr-topic
       value: היכרות
 
+  - &prog-89-1
+    <<: *lesson
+    courseId: prog-89-5787-01
+    courseName: 
+      <<: *attr-course
+      value: מדמ"ח שנתיים לבגרות
+    tags:
+      <<: *attr-ages
+      values: ["כיתות ח-ט"]
+    topic:
+      <<: *attr-topic
+      value: היכרות
+
+  - &prog-91-1
+    <<: *lesson
+    courseId: prog-91-5787-01
+    courseName: 
+      <<: *attr-course
+      value: מדמ"ח שנה לבגרות
+    tags:
+      <<: *attr-ages
+      values: ["כיתות ט-י"]
+    topic:
+      <<: *attr-topic
+      value: היכרות
+
 lessons:
   gifted-vav:
     - <<: *gifted-vav-1
@@ -136,3 +162,26 @@ lessons:
         <<: *attr-time
         value: 15:00
       whatsapp: https://chat.whatsapp.com/IqYbf8qEOU71I9uT0yWKfM
+
+  prog-89:
+    - <<: *prog-89-1
+      daisy: bg-pink-100
+      date: 
+        <<: *attr-date
+        value: 27/9
+      time: 
+        <<: *attr-time
+        value: --:--
+      whatsapp: https://chat.whatsapp.com/BqDbezo2n6nEkri0CzPPqs
+
+  prog-91:
+    - <<: *prog-91-1
+      daisy: bg-yellow-100
+      date: 
+        <<: *attr-date
+        value: 28/9
+      time: 
+        <<: *attr-time
+        value: --:--
+      whatsapp: https://chat.whatsapp.com/CnUeE2QDTVFJ6O9ehNbSht
+
