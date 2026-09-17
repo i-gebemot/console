@@ -65,7 +65,7 @@ lesson-templates:
     courseId: prog-78-5787-01
     courseName: 
       <<: *attr-course
-      value: מדמ"ח שלוש שנים לפני בגרות
+      value: מדמ"ח שלוש שנים
     tags:
       <<: *attr-ages
       values: ["כיתות ז-ח"]
