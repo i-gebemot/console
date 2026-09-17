@@ -25,7 +25,17 @@ property-templates:
 
 
 lesson-templates:
+  - &lesson
+    students:
+      <<: *attr
+      value: 0
+    whatsapp: ''
+    whatsappAura: false
+    daisy: ''
+    iAmIn: false
+
   - &gifted-vav-1
+    <<: *lesson
     courseId: gifted-vav-5787-01
     courseName:
       <<: *attr-course
@@ -36,14 +46,9 @@ lesson-templates:
     topic: 
       <<: *attr-topic
       value: היכרות
-    students:
-      <<: *attr
-      value: 0
-    daisy: ''
-    whatsapp: ''
-    iAmIn: false
 
   - &prog-kids-1
+    <<: *lesson
     courseId: prog-kids-5787-01
     courseName: 
       <<: *attr-course
@@ -54,14 +59,9 @@ lesson-templates:
     topic:
       <<: *attr-topic
       value: היכרות
-    students:
-      <<: *attr
-      value: 0
-    daisy: ''
-    whatsapp: ''
-    iAmIn: false
 
   - &prog-78-1
+    <<: *lesson
     courseId: prog-78-5787-01
     courseName: 
       <<: *attr-course
@@ -72,12 +72,6 @@ lesson-templates:
     topic:
       <<: *attr-topic
       value: היכרות
-    students:
-      <<: *attr
-      value: 0
-    daisy: ''
-    whatsapp: ''
-    iAmIn: false
 
 lessons:
   sep.3:
