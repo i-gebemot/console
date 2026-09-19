@@ -1,38 +1,41 @@
 property-templates:
   - &attr
-    font: Excalidraw
-    daisy: 'bg-gray-300'
+    daisy: ''
 
   - &attr-course
     <<: *attr
-    daisy: 'bg-cyan-200'
+    tailwind: 'text-2xl bg-cyan-200'
 
   - &attr-topic
     <<: *attr
-    daisy: 'bg-lime-200'
+    tailwind: 'text-2xl bg-lime-200'
 
   - &attr-date
     <<: *attr
-    daisy: 'bg-orange-400'
+    tailwind: 'text-2xl bg-orange-400'
 
   - &attr-time
     <<: *attr
-    daisy: 'bg-yellow-400'
+    tailwind: 'text-2xl bg-yellow-400'
 
-  - &attr-ages
+  - &attr-tags
     <<: *attr
-    daisy: 'bg-gray-300'
+    tailwinds: 
+      - 'text-md bg-red-200'
 
+  - &attr-counter
+    <<: *attr
+    tailwind: 'text-md bg-gray-100'
 
 lesson-templates:
   - &lesson
-    students:
-      <<: *attr
+    counter:
+      <<: *attr-counter
       value: 0
+      id: ''
+    iAmIn: false
     whatsapp: ''
     whatsappAura: false
-    daisy: ''
-    iAmIn: false
 
   - &gifted-vav-1
     <<: *lesson
@@ -41,7 +44,7 @@ lesson-templates:
       <<: *attr-course
       value: הכנה למבחן מחוננים
     tags:
-      <<: *attr
+      <<: *attr-tags
       values: ["כיתה ו"]
     topic: 
       <<: *attr-topic
@@ -54,8 +57,15 @@ lesson-templates:
       <<: *attr-course
       value: מדמ"ח לצעירים
     tags:
-      <<: *attr-ages
-      values: ["גילאים 10-11"]
+      <<: *attr-tags
+      values:
+        - גילאים 10-11
+        - Scratch
+        - Python
+      tailwinds:
+        - bg-red-200
+        - bg-yellow-200
+        - bg-yellow-200 
     topic:
       <<: *attr-topic
       value: היכרות
@@ -65,10 +75,18 @@ lesson-templates:
     courseId: prog-78-5787-01
     courseName: 
       <<: *attr-course
-      value: מדמ"ח שלוש שנים
+      value: מדמ"ח שלוש שנים לבגרות
+      tailwind: "bg-cyan-200 text-xl"
     tags:
-      <<: *attr-ages
-      values: ["כיתות ז-ח"]
+      <<: *attr-tags
+      values:
+        - כיתות ז-ח
+        - Scratch
+        - Python
+      tailwinds:
+        - bg-red-200
+        - bg-yellow-200
+        - bg-yellow-200 
     topic:
       <<: *attr-topic
       value: היכרות
@@ -80,8 +98,15 @@ lesson-templates:
       <<: *attr-course
       value: מדמ"ח שנתיים לבגרות
     tags:
-      <<: *attr-ages
-      values: ["כיתות ח-ט"]
+      <<: *attr-tags
+      values:
+        - כיתות ח-ט
+        - Python
+        - Java
+      tailwinds:
+        - bg-red-200
+        - bg-yellow-200 
+        - bg-yellow-200 
     topic:
       <<: *attr-topic
       value: היכרות
@@ -93,8 +118,17 @@ lesson-templates:
       <<: *attr-course
       value: מדמ"ח שנה לבגרות
     tags:
-      <<: *attr-ages
-      values: ["כיתות ט-י"]
+      <<: *attr-tags
+      values:
+        - כיתות ט-י
+        - Java
+        - C#
+        - 271
+      tailwinds:
+        - bg-red-200
+        - bg-yellow-200 
+        - bg-yellow-200 
+        - bg-yellow-200 
     topic:
       <<: *attr-topic
       value: היכרות
@@ -102,7 +136,6 @@ lesson-templates:
 lessons:
   gifted-vav:
     - <<: *gifted-vav-1
-      daisy: bg-red-100
       date: 
         <<: *attr-date
         value: 22/9
@@ -112,7 +145,6 @@ lessons:
       whatsapp: https://chat.whatsapp.com/DOFt0rDop8JKs3iLlQvOKx
 
     - <<: *gifted-vav-1
-      daisy: bg-green-100
       date: 
         <<: *attr-date
         value: 23/9
@@ -123,7 +155,6 @@ lessons:
 
   prog-kids:
     - <<: *prog-kids-1
-      daisy: bg-purple-100
       date: 
         <<: *attr-date
         value: 22/9
@@ -133,7 +164,6 @@ lessons:
       whatsapp: https://chat.whatsapp.com/GPHbwrXoTpd5eWUXGkGHqZ
 
     - <<: *prog-kids-1
-      daisy: bg-yellow-100
       date: 
         <<: *attr-date
         value: 24/9
@@ -144,7 +174,6 @@ lessons:
 
   prog-78:
     - <<: *prog-78-1
-      daisy: bg-green-100
       date: 
         <<: *attr-date
         value: 23/9
@@ -154,7 +183,6 @@ lessons:
       whatsapp: https://chat.whatsapp.com/IqYbf8qEOU71I9uT0yWKfM
 
     - <<: *prog-78-1
-      daisy: bg-blue-100
       date: 
         <<: *attr-date
         value: 24/9
@@ -165,7 +193,6 @@ lessons:
 
   prog-89:
     - <<: *prog-89-1
-      daisy: bg-pink-100
       date: 
         <<: *attr-date
         value: 27/9
@@ -176,7 +203,6 @@ lessons:
 
   prog-91:
     - <<: *prog-91-1
-      daisy: bg-yellow-100
       date: 
         <<: *attr-date
         value: 28/9
