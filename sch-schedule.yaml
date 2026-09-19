@@ -198,7 +198,7 @@ lessons:
         value: 27/9
       time: 
         <<: *attr-time
-        value: --:--
+        value: 13:00
       whatsapp: https://chat.whatsapp.com/BqDbezo2n6nEkri0CzPPqs
 
   prog-91:
@@ -208,6 +208,6 @@ lessons:
         value: 28/9
       time: 
         <<: *attr-time
-        value: --:--
+        value: 13:00
       whatsapp: https://chat.whatsapp.com/CnUeE2QDTVFJ6O9ehNbSht
 
