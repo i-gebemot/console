@@ -3106,10 +3106,8 @@ lessons:\r
     'equ.md-03',\r
     'dividers-01',\r
 ]`);var k=de(I,4);fi(k,"list",`[\r
-    "iq-math-memutza_1-01",\r
     "iq-math-ahuzim_1-03",\r
     "iq-math-shvarim_1-04",\r
-    "iq-math-dereh-espek-yahas_1-03",\r
 ]`);var T=de(k,4);fi(T,"list",`[\r
     "iq-sequence-1-01",\r
     "iq-sequence-1-02",\r
