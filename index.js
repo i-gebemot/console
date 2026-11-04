@@ -5348,18 +5348,6 @@ lessons:\r
 
 ---
 
-#!markdown
-
-<anki-cards list='[
-    "iq-math-memutza_1-10",
-    "iq-math-shvarim_1-05",
-    "iq-math-melulit_all_1-08",
-    "iq-math-ahuzim_2-04",
-]'></anki-cards>
-
-#!markdown
-
----
 `,NJ=`#!meta
 
 {"kernelInfo":{"defaultKernelName":"csharp","items":[{"name":"csharp"},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"html","languageName":"HTML"},{"name":"http","languageName":"HTTP"},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"mermaid","languageName":"Mermaid"},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"value"}]}}
