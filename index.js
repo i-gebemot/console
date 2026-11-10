@@ -5481,8 +5481,7 @@ lessons:\r
 <anki-cards list='[
     "iq-baayot_shonot_2-04",
     "iq-math-ahuzim_4-02",
-    "iq-baayot_shonot_2-10",
-    "iq-baayot_shonot_2-14"
+    "iq-baayot_shonot_2-10"
 ]'></anki-cards>
 
 #!markdown
