@@ -5608,7 +5608,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards height=620 list='[
+<anki-cards scale=0.9 height=620 list='[
     "iq-simulation-3-09",
     "iq-simulation-3-10",
     "iq-simulation-3-14"
@@ -5620,7 +5620,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards width=360 height=620 list= '[
+<anki-cards scale=0.8 idth=360 height=620 list= '[
     "iq-sequence-2-07",
     "iq-sequence-1-01-fr"
 ]'></anki-cards>
