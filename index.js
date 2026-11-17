@@ -6293,7 +6293,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.65 height=700 width=520 list='[
+<anki-cards scale=0.65 height=700 width=360 list='[
     "ym-logic-alice-09",
     "ym-logic-alice-10",
 ]'></anki-cards>
@@ -6304,7 +6304,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.65 height=700 width=520 list='[
+<anki-cards scale=0.65 height=700 width=360 list='[
     "ym-logic-alice-11",
     "ym-logic-alice-12",
 ]'></anki-cards>
@@ -6326,7 +6326,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.55 height=600 width=600 list='[
+<anki-cards scale=0.55 height=600 width=360 list='[
     "ym-logic-alice-15",
     "ym-logic-alice-16",
 ]'></anki-cards>
@@ -6337,7 +6337,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.55 height=600 width=600 list='[
+<anki-cards scale=0.55 height=600 width=360 list='[
     "ym-logic-cases-01",
     "ym-logic-cases-02",
 ]'></anki-cards>
@@ -6359,7 +6359,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.7 height=600 width=500 list='[
+<anki-cards scale=0.7 height=600 width=360 list='[
     "ym-logic-cases-05",
     "ym-logic-cases-06",
 ]'></anki-cards>
@@ -6370,7 +6370,7 @@ lessons:\r
 
 #!markdown
 
-<anki-cards scale=0.7 height=600 width=500 list='[
+<anki-cards scale=0.7 height=600 width=360 list='[
     "ym-at-least-at-most-01",
     "ym-at-least-at-most-02",
 ]'></anki-cards>
